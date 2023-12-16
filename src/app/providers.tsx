@@ -5,6 +5,8 @@ import { ThemeProvider } from 'next-themes';
 import { FC, ReactNode } from 'react';
 import { Client, Provider, cacheExchange, fetchExchange } from 'urql';
 
+import { Toaster } from '@/components/ui/toaster';
+
 const client = new Client({
   url: 'https://graphql.anilist.co',
   exchanges: [cacheExchange, fetchExchange],
@@ -18,6 +20,8 @@ export const Providers: FC<{ children: ReactNode }> = ({ children }) => {
           {children}
         </Theme>
       </ThemeProvider>
+
+      <Toaster />
     </Provider>
   );
 };

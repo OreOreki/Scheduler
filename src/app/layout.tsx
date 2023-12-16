@@ -4,6 +4,7 @@
 import type { Metadata } from 'next';
 import { Wendy_One } from 'next/font/google';
 
+import '@radix-ui/themes/styles.css'
 import '../styles/globals.css';
 import { Providers } from './providers';
 
