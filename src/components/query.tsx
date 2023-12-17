@@ -12,7 +12,6 @@ import { SEARCH_USER } from '@/lib/queries';
 
 import { useToast } from './ui/use-toast';
 
-
 export interface QueryParams {
   username: string;
 }
